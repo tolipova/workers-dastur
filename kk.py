@@ -4,9 +4,10 @@ while True:
     ism = input("Ishchining ismini kiriting: ") 
     if ism.lower() == 'exit':
         break
+    ishchilar.append(ism)
 ishga_kirish_vaqti={}    
 
-while len(ishchilar)>0:
+while len(ishchilar) > 0:
     ishchilar_ismi = ishchilar.pop(0) #ruyxatni boshidan ma'lumot oladi
     vaqt = float(input(f"{ishchilar_ismi} ishga kelgan vaqtini kirit: "))
     ishga_kirish_vaqti[ishchilar_ismi] = vaqt
